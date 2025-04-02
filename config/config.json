@@ -1,0 +1,26 @@
+{
+    "//": "Set seed value",
+    "random_seed" : 42,
+
+    "//": "Model folder",
+    "path_models" : "./models/",
+    "path_data" : "./data/",
+    "path_figures": "./figures/",
+
+    "//": "Callbacks parameters",
+    "callbacks":{
+        "model_name":"Model_voice",
+        "cooldown_epochs":1,
+        "lr":1e-3,
+        "reduce_patience":10,
+        "stop_patience":150,
+        "monitor":"val_accuracy",
+        "verbose":0,
+        "mode":"max",
+        "save_weights_only":true, 
+        "save_best_only": true,
+        "restore_best_weights": true,
+        "factor": 0.9
+    }
+
+}
